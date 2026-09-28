@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewtranscations</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'views.css' %}">
+</head>
+
+<body>
+    <div class="template-page">
+        <div class="template">
+            <i class="bi bi-bank"></i>
+            <span>Bluewhale Bank</span>
+            <h6 id="secure">Secure Banking</h6>
+        </div>
+        <ul>
+            <li>
+                <a href="http://127.0.0.1:8000/features">
+                    <i class="bi bi-house-door"></i>
+                    <p>HOME</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-download"></i>
+                    <p>Deposit</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-download"></i>
+                    <p>Withdraw</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-arrow-left-right"></i>
+                    <p>Transfer</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-wallet2"></i>
+                    <p>Check</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-receipt"></i>
+                    <p>Viewtranscations</p>
+                </a>
+            </li>
+        </ul>
+        <div class="btn">
+            <i class="class="bi bi-box-arrow-left></i>
+            <button type="submit" id="btn">LOGOUT</button>
+        </div>
+    </div>
+    <div class="tables">
+        <form action="" method="POST">
+            <table>
+                <tr>
+                    <th>From account</th>
+                    <th>To account</th>
+                    <th>Transcations</th>
+                    <th>Type</th>
+                </tr>
+                {% for process in Transcations %}
+                <tr>
+                    <td>{{process.from_account.account_number}}</td>
+                    <td>{{process.to_account.account_number}}</td>
+                    <td>{{process.amount}}</td>
+                    <td>{{process.type}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Register.css' %}">
+</head>
+
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="bigwhale">
+            <img id="ed" src="{% static 'whale.png.jpeg' %}">
+            <div class="Register-page">
+                <div class="Register">
+                    <div class="o">
+                        <img id="tail"
+                            src="https://tse4.mm.bing.net/th/id/OIP.lWpL3apTGjEpXjycDRXvGQAAAA?r=0&pid=ImgDet&w=203&h=203&c=7&o=7&rm=3">
+                    </div>
+                    <h3 id="link">Create Your Account</h3>
+                    <label>First Name: </label>
+                    <input id="task" required type="text" placeholder="First Name" name="first_name">
+                    <label>Last Name:</label>
+                    <input id="task" required type="text" placeholder="Last Name" name="last_name">
+                    <label>Email:</label>
+                    <input id="task" required type="Email" placeholder="Email" name="email">
+                    <label>Password:</label>
+                    <input id="task" required type="password" placeholder="password" name="password">
+                    <label>confirm Password:</label>
+                    <input id="task" required type="password" placeholder=" confirm password" name="confirm_password">
+                    <div class="color">
+                        {{ error }}
+                    </div>
+                    <button id="regi" type="submit">REGISTER</button>
+                    <div class="account">
+                        already have an account
+                        <a id="href" href="http://127.0.0.1:8000/login">?Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

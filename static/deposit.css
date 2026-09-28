@@ -1,0 +1,170 @@
+
+.template-page{
+    width: 18vw;
+    height: 100vh;
+    background-color:  rgb(0, 27, 58);;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.template{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 3px solid white;
+    
+    
+}
+#secure{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+ul{
+    list-style: none;
+    margin-top: 25px;
+}
+
+ul li{
+    margin: 8px 15px;
+
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+ul li a:hover{
+    background-color: cornflowerblue;
+}
+
+
+#btn{
+    margin-top: auto;
+    padding: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+#btn:hover{
+    background-color:cornflowerblue ;
+    color: black;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+
+a{
+
+    text-decoration: none;
+    color: white;
+}
+
+input{
+    border-color: black;
+}
+
+
+
+#depo{
+    width: 50vw;
+    padding: 10px;
+
+}
+#select{
+     width: 50vw;
+    padding: 10px;
+}
+
+
+
+.deposit{
+    background-color: white;
+    padding: 55px;
+}
+
+
+.deposit-page{
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    
+}
+
+
+#try{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 17px;
+    padding: 8px;
+    background-color:  rgb(0, 27, 58);
+    color: white;
+}
+
+.icon   {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 27, 58);;
+    border-radius: 90%;
+    color: white;
+    text-align: center;
+}
+
+#re{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+
+.account{
+    background-color:  rgb(0, 27, 58);;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+body{
+    background-color:  rgb(0, 0, 24);
+}
+
+i{
+
+    color: white;
+}
